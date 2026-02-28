@@ -38,7 +38,7 @@ Options:
 Show next 10 upcoming games:
 
 ```bash
-hockey-schedule --url "https://sportsix.sports-it.com/ical?cid=tspc&id=705&k=4a47d2983c8bd392b120b627e0e1cab4"
+hockey-schedule --url "https://example.com/schedule.ics"
 ```
 
 Show only Raptors games:
@@ -72,3 +72,4 @@ hockey-schedule --url "https://example.com/schedule.ics" --num 5
 - `chrono` - Date/time handling
 - `clap` - CLI argument parsing
 - `anyhow` - Error handling
+- `regex` - Parsing location/address fields
