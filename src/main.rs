@@ -12,7 +12,7 @@ use std::io::BufReader;
 #[command(about = "Fetch and display upcoming hockey games from an iCal feed")]
 struct Args {
     /// iCal feed URL
-    #[arg(short, long, default_value = "https://example.com/hockey-schedule.ics")]
+    #[arg(short, long, env = "HOCKEY_ICAL_URL", default_value = "https://example.com/hockey-schedule.ics")]
     url: String,
 
     /// Number of upcoming games to show

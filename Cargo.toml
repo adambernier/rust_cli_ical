@@ -8,6 +8,6 @@ description = "CLI tool to fetch and display upcoming hockey games from an iCal 
 reqwest = { version = "0.11", features = ["blocking"] }
 ical = "0.10"
 chrono = "0.4"
-clap = { version = "4", features = ["derive"] }
+clap = { version = "4", features = ["derive", "env"] }
 anyhow = "1.0"
 regex = "1"
