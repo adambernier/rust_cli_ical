@@ -25,13 +25,23 @@ The binary will be at `target/release/hockey-schedule`.
 hockey-schedule [OPTIONS]
 
 Options:
-  -u, --url <URL>    iCal feed URL [default: https://example.com/hockey-schedule.ics]
+  -u, --url <URL>    iCal feed URL [env: HOCKEY_ICAL_URL] [default: https://example.com/hockey-schedule.ics]
   -n, --num <NUM>    Number of upcoming games to show [default: 10]
   -t, --team <TEAM>  Filter to only games involving this team (case-insensitive)
       --ics          Output as iCal format instead of human-readable text
       --csv          Output as CSV format
   -h, --help         Print help
 ```
+
+## Environment Variables
+
+You can set the iCal feed URL via an environment variable instead of passing it as a flag each time:
+
+```bash
+export HOCKEY_ICAL_URL="https://example.com/schedule.ics"
+```
+
+Add this to your `~/.bashrc` or `~/.zshrc` to make it permanent. The `--url` flag takes precedence over the environment variable if both are provided.
 
 ## Examples
 
